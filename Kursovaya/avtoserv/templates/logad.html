@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+<div class="wrapper">
+<h1>Вход для админа</h1>
+<div class="login">
+    <div class="log">
+        <form action="{{url_for('login')}}" method="post" class="form-contact">
+            <p><label> Имя </label> <input type="text" name="login" value="" required></p>
+            <p><label> Пароль </label> <input type="password" name="password" value="" required></p>
+            <p><input type="submit" class="knopka" value="Вход"></p>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

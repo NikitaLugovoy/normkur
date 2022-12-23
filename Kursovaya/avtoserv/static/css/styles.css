@@ -1,0 +1,361 @@
+html, body {
+    font-family: 'Times';
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 1206px;
+
+}
+a {
+    color: #0059b2;
+    text-decoration: none;
+}
+a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+ul.mainmenu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #21DB56;
+    height: 60px;
+    margin: 0;
+    border-bottom: 1px solid gray;
+    padding: 0;
+    font-size: 20px;
+    overflow: hidden;
+    text-shadow: 3px 3px 3px #000;
+}
+ul.mainmenu li {
+    text-shadow: 3px 3px 3px #000;
+    margin: 18px 40px 0 50px;
+}
+ul.mainmenu li.last {float: right;}
+
+ul.mainmenu li a {
+    text-shadow: 3px 3px 3px #000;
+    color: #CCFFCA;
+    text-decoration: none;
+}
+ul.mainmenu li a:hover {
+    color: black;
+}
+
+.test li{
+list-style-type: circle;
+    font-size:24px;
+    color: #3F4137;
+    font-family: 'Roboto';
+}
+
+.test b{
+color:#0059b2;
+font-size:32px;
+}
+
+div.content {
+
+}
+
+.clear {clear: both;}
+
+
+.form-contact input[type=submit], textarea {
+    font-size: 20px;
+}
+
+.form-contact label {
+    display: inline-block;
+    min-width: 150px;
+}
+.form-contact p {margin: 10px 0 10px 0;}
+.form-contact input[type=submit], textarea {
+    font-size: 20px;
+}
+.kn {
+    margin-left: 40%;
+    text-align:center;
+}
+.centr{
+    display: flex;
+    justify-content: center;
+}
+.flash {
+    display: flex;
+    height :40px;
+    width: 400px;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+.flash.success{
+border: 4px solid #21DB56;
+background: #AEFFC5;
+    text-align:center;
+}
+.flash.error {
+border: 5px solid #FF4343;
+background: #FF9C9C;
+    text-align:center;
+}
+
+.header-img{
+    display: block;
+    background-image: url(	https://stoavto32.ru/assets/templates/sto/images/bg/header/header.JPG);
+    width: 1206px;
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+ .header-img h1{
+     padding-top: 90px;
+    font-size:65px;
+    color : #f4f4f4;
+    text-shadow: 5px 5px 5px #000;
+}
+
+ .header-img h2{
+     padding-top: 420px;
+     display: block;
+     margin-left: auto;
+    margin-right: 20px;
+     width: 600px;
+    text-align: right;
+    font-size:35px;
+    color : #f4f4f4;
+    text-shadow: 3px 3px 3px #000;
+}
+
+h1{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+.opisanie{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-indent: 30px;
+    padding-bottom: 100px;
+    text-align: justify;
+}
+
+.sotrudniki{
+    text-align: center;
+    display: flex;
+    width: 1206px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 100px;
+}
+
+.sotrudniki-cheloveki{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    background: white;
+    border: 2px solid #fff2f2;
+}
+.karta{
+    text-align: center;
+}
+
+.wrapper{
+    background-color: #CCFFCA;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.model{
+    display: flex;
+    width: 1206px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+.model-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background: white;
+    border: 2px solid #fff2f2;
+}
+
+.registr{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registr input{
+    font-size: 25px;
+}
+.registr p{
+    font-size: 25px;
+}
+.regi{
+    width: 325px;
+    height: 200px;
+    background: white;
+    border: 10px groove #21DB56;
+}
+.knpk{
+    margin-left: 18%;
+    height:40px;
+    width: 200px;
+    text-align:center;
+}
+.login{
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login input{
+    font-size: 25px;
+}
+
+.log{
+    background: white;
+    width: 325px;
+    height: 200px;
+    border: 10px groove #21DB56;
+}
+
+.otz{
+    display: flex;
+    justify-content: center;
+    height: 700px;
+}
+
+.ostusl{
+    display: flex;
+    justify-content: center;
+}
+
+.zak{
+    display: inline-block;
+    justify-content: center;
+
+}
+
+.otziv{
+    display: flex;
+    margin-top: 10px;
+    background: #f4f4f4;
+    justify-content: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.pofiladm{
+    display: flex;
+    justify-content: center;
+}
+.uslug{
+    display: flex;
+    margin-top: 10px;
+    background: #f4f4f4;
+    justify-content: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.ostusl{
+    margin-top: 50px;
+}
+
+.del{
+    margin-top: 23px;
+    margin-left: 40%;
+}
+
+.uslug p {
+    font-size: 20px;
+}
+.otziv p {
+    font-size: 20px;
+}
+.login p{
+    font-size: 25px;
+}
+.knopka{
+    margin-left: 35%;
+    height:40px;
+    width: 100px;
+    text-align:center;
+}
+.pofil {
+    display: flex;
+}
+.pofil h1 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.ssil{
+    display: flex;
+    justify-content: center;
+}
+
+.ssil a{
+    font-size: 25px;
+    height: 100px;
+}
+.plotz{
+    display: flex;
+
+}
+
+.footer-block {
+    width: 1205px;
+    margin: 0px auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#21DB56;
+    color:white;
+    text-shadow: 3px 3px 3px #000;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer li {
+    display: inline-block;
+    padding-left: 45px;
+}
+
+.footer li>a i{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.f1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opis{
+    font-size: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-indent: 30px;
+    padding-bottom: 100px;
+}

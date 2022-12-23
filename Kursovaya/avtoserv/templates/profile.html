@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+<div class="wrapper">
+<h1>Личный кабинет</h1>
+<div class="pofil">
+  <img src="https://avatars.mds.yandex.net/i?id=6e1e113b7bee41f4c4c0530d8f83f9ebb2be0ecd-7106899-images-thumbs&n=13" width="150px" height="150px">
+  <h1>Добро пожаловать в личный кабинет нашего автосервиса </h1>
+
+<!--    {%- block users -%}
+        {% for n in users -%}
+        <div class="uslug">
+        <p>{{ n['login']}}</p>
+        </div>
+        {% endfor -%}
+
+{%- endblock users -%}
+    <h1> {{'username'}} 1</h1>-->
+</div>
+<h1>Оставьте сообщение об услугах которые требуется вам сделать:</h1>
+ <div class="ostusl">
+<form  method="post"  class="form-contact">
+    <p> <label> Как к вам обращаться: </label> <input type="text" name="fio" value="" required> </p>
+    <p> <label> Как с вами связаться : </label> <input type="text" name="contact" value="" required> </p>
+    <p> <label> Услуги(Если вы хотите выбрать одну услугу, то в остальных формах выберите прочерки)</label></p>
+    <div class="zak">
+    {%- block uslugi -%}
+        <div class="zk1">
+    <select name="usluga1">
+        {% for n in uslugi -%}
+        <div class="otziv">
+        <option>{{ n['usluga']}} - {{ n['zena'] }}</option>
+        </div>
+        {% endfor -%}
+    </select>
+            </div>
+        <div class="zk1">
+    <select name="usluga2">
+        {% for n in uslugi -%}
+        <div class="otziv">
+        <option>{{ n['usluga']}} - {{ n['zena'] }}</option>
+        </div>
+        {% endfor -%}
+    </select>
+            </div>
+        <div class="zk1">
+    <select name="usluga3">
+        {% for n in uslugi -%}
+        <div class="otziv">
+        <option>{{ n['usluga']}} - {{ n['zena'] }}</option>
+        </div>
+        {% endfor -%}
+    </select>
+        </div>
+    {%- endblock uslugi -%}
+    </div>
+    <p> <input class="kn" type="submit" value="Отправить"></p>
+</form>{% for  cat, msg in get_flashed_messages(True) %}
+</div>
+<div class="centr">
+<div class="flash {{cat}}"> {{msg}} </div>
+{% endfor %}
+</div>
+
+
+
+
+<div class="ssil"><a href="/otzivi">Оставить отзыв можно по этой ссылке</a></div>
+<div class="ssil"><a href="/vixod">Выйти из личного кабинета</a></div>
+</div>
+{% endblock %}

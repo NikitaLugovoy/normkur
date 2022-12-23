@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+<div class="wrapper">
+<h1>Личный кабинет</h1>
+<div class="pofiladm">
+  <img src="https://avatars.mds.yandex.net/i?id=37d902656e1718cdacb9bdf084d0992e9171cd53-7085821-images-thumbs&n=13" width="150px" height="150px">
+</div>
+<h1>Список возможностей:</h1>
+<div class="ssil"><a href="/admin/zakazi">1. Заказы </a></div>
+<div class="ssil"><a href="/admin/dobuser">2. Добавление пользователей</a></div>
+<div class="ssil"><a href="/admin/dobusl">3. Добавить новые услуги</a></div>
+<div class="ssil"><a href="/admin/delusers">4. Посмотерть пользователей (удалить лишних)</a></div>
+<div class="ssil"><a href="/vixod">Выйти из личного кабинета</a></div>
+</div>
+
+{% endblock %}

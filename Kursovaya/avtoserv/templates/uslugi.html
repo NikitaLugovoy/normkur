@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{{super()}}
+<div class="wrapper">
+<h1>Услуги</h1>
+{%- block uslugi -%}
+        {% for n in uslugi -%}
+        <div class="uslug">
+        <p>{{ n['usluga']}} - {{ n['zena'] }}</p>
+        </div>
+        {% endfor -%}
+
+{%- endblock uslugi -%}
+</div>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{{super()}}
+<div class="wrapper">
+<h1>Полученые Отзывы</h1>
+{%- block otziv -%}
+        {% for n in otziv -%}
+        <div class="otziv">
+        <p>{{ n['username']}} - {{ n['email'] }} - {{ n['messeng'] }}</p>
+        </div>
+        {% endfor -%}
+
+{%- endblock otziv -%}
+</div>
+{% endblock %}

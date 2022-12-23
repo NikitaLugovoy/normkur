@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+{{super()}}
+<div class="wrapper">
+<h1>Просмотр и Удаление пользователей</h1>
+{%- block users -%}
+        {% for n in users -%}
+        <div class="uslug">
+        <p>{{ n['login'] }} - {{ n['password'] }}</p>
+        <a class="del" href="{{url_for('.delusers')}}/{{n.id}}">Удалить</a>
+        </div>
+        {% endfor -%}
+
+{%- endblock users -%}
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet" />
+    {% block title -%}
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Flask</title>
+    {% endif %}
+    {% endblock %}
+</head>
+<body>
+{% block content -%}
+            {%-  block mainmenu -%}
+                <ul class="mainmenu">
+                       <li>avtoserv32</li>
+
+                    {% for m in menu -%}
+
+
+                    <li>  <a href="{{m['url']}}"> {{m['name']}} </a> </li>
+                    {% endfor -%}
+
+                </ul>
+            {% endblock mainmenu -%}
+    <div class="clear"></div>
+    <div class="content">
+    {% if title -%}
+    {% else -%}
+    <h1>Flask</h1>
+    {% endif -%}
+        </div>
+{% endblock %}
+
+<div class="footer-block">
+    <p>Контактный номер телефона: 8-900-888-33-22</p>
+    {% block footer %}
+        <ul class="footer">
+            {% for m in footer -%}
+                <li><a href="{{ m['url'] }}"><i class="{{ m['class'] }}"></i></a></li>
+            {% endfor %}
+        </ul>
+    {% endblock footer -%}
+</div>
+</body>
+</html>

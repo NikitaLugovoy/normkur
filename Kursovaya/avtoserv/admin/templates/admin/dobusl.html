@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+<div class="wrapper">
+<h1>Добавьте новую услугу предоставляемую у нас</h1>
+<div class="otz">
+<form  method="post"  class="form-contact">
+    <p> <label> Название услуги: </label> <input type="text" name="usluga" value="" required> </p>
+    <p> <label> Цена : </label> <input type="text" name="zena" value="" required> </p>
+    <p> <input class="kn" type="submit" value="Отправить"></p>
+</form>{% for  cat, msg in get_flashed_messages(True) %}
+</div>
+
+<div class="centr">
+<div class="flash {{cat}}"> {{msg}} </div>
+{% endfor %}
+</div>
+</div>
+</div>
+{% endblock %}
